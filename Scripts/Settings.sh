@@ -47,4 +47,5 @@ if [[ $WRT_BRANCH == *"23.05"* ]]; then
   	echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
   	echo "CONFIG_PACKAGE_luci-app-msd_lite=y" >> ./.config
    	echo "CONFIG_PACKAGE_luci-app-omcproxy=y" >> ./.config
+      	echo "CONFIG_PACKAGE_luci-proto-wireguard=y" >> ./.config
 fi
