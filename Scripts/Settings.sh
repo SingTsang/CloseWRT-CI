@@ -37,13 +37,14 @@ if [[ $WRT_BRANCH == *"23.05"* ]]; then
 	sed -i '/luci-app-upnp/d' ./.config
 	sed -i '/miniupnpd/d' ./.config
 
-	echo "CONFIG_PACKAGE_luci-app-openclash=n" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-upnp=n" >> ./.config
 	echo "CONFIG_PACKAGE_miniupnpd=n" >> ./.config
 
-	echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-homeproxy=n" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-upnp-mtk-adjust=y" >> ./.config
 
+  	echo "CONFIG_PACKAGE_luci-app-ddns=y" >> ./.config
   	echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
   	echo "CONFIG_PACKAGE_luci-app-msd_lite=y" >> ./.config
    	echo "CONFIG_PACKAGE_luci-app-omcproxy=y" >> ./.config
