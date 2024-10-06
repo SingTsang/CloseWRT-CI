@@ -43,4 +43,8 @@ if [[ $WRT_BRANCH == *"23.05"* ]]; then
 
 	echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-upnp-mtk-adjust=y" >> ./.config
+
+  	echo "CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y" >> ./.config
+  	echo "CONFIG_PACKAGE_luci-i18n-msd_lite-zh-cn=y" >> ./.config
+   	echo "CONFIG_PACKAGE_luci-i18n-omcproxy-zh-cn=y" >> ./.config
 fi
