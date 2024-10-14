@@ -44,9 +44,13 @@ if [[ $WRT_BRANCH == *"23.05"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-upnp-mtk-adjust=y" >> ./.config
 
- echo "CONFIG_PACKAGE_luci-proto-wireguard=y" >> ./.config
- echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
- echo "CONFIG_PACKAGE_luci-app-wol=y" >> ./.config
- echo "CONFIG_PACKAGE_luci-app-zerotier=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-proto-wireguard=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-ddns=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-msd_lite=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-omcproxy=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-unblockneteasemusic=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-wol=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-zerotier=y" >> ./.config
 
 fi
