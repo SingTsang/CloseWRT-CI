@@ -5,7 +5,7 @@ sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/coll
 #修改immortalwrt.lan关联IP
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $(find ./feeds/luci/modules/luci-mod-system/ -type f -name "flash.js")
 #添加编译日期标识
-sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ $WRT_CI-$WRT_DATE')/g" $(find ./feeds/luci/modules/luci-mod-status/ -type f -name "10_system.js")
+#sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ $WRT_CI-$WRT_DATE')/g" $(find ./feeds/luci/modules/luci-mod-status/ -type f -name "10_system.js")
 
 #修改默认WIFI名
 WIFI_FILE="./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh"
@@ -43,4 +43,12 @@ if [[ $WRT_BRANCH == *"23.05"* ]]; then
 
 	echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-upnp-mtk-adjust=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-proto-wireguard=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-ddns=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-msd_lite=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-omcproxy=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-unblockneteasemusic=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-wol=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-zerotier=y" >> ./.config
 fi
