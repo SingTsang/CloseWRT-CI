@@ -198,6 +198,7 @@ CONFIG_PACKAGE_TURBOACC_INCLUDE_NO_FASTPATH=y
 CONFIG_PACKAGE_wifi-dats=y
 CONFIG_PACKAGE_wireless-regdb=y
 CONFIG_PACKAGE_wireless-tools=y
+#新增个人用
 #CONFIG_PACKAGE_firewall=y
 #CONFIG_PACKAGE_iptables-mod-fullconenat=y
 #CONFIG_PACKAGE_libip4tc2=y
