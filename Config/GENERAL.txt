@@ -204,6 +204,7 @@ CONFIG_PACKAGE_wireless-tools=y
 #CONFIG_PACKAGE_libip4tc2=y
 #CONFIG_PACKAGE_libip6tc2=y
 CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_memcached=y
 CONFIG_PACKAGE_php8=y
 CONFIG_PACKAGE_php8-cgi=y
 CONFIG_PACKAGE_php8-mod-curl=y
@@ -215,7 +216,7 @@ CONFIG_PACKAGE_php8-mod-soap=y
 CONFIG_PACKAGE_php8-mod-simplexml=y
 CONFIG_PACKAGE_php8-mod-session=y
 CONFIG_PACKAGE_php8-mod-pdo-sqlite=y
-CONFIG_PACKAGE_php8-mod-sqlite3 memcached=y
+CONFIG_PACKAGE_php8-mod-sqlite3
 #通用组件，请勿修改
 # CONFIG_AFALG_FALLBACK is not set
 # CONFIG_GDB is not set
